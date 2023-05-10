@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --laranja : #FF6000;
+    --branco : #FFE6C7;
+    --preto : #454545;
+    --laranja-claro: #FFA559;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: relative;
+}
+
+main {
+    background-color: #fff;
+}
+
+.nav--web {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+}
+
+.nav__title {
+    color: var(--laranja);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav__title strong {
+    font-weight: 500;
+}
+
+.nav__lista {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.nav__lista__container {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav__item a {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.nav__item a:hover {
+    border-bottom: 1px solid var(--laranja);
+}
+
+.nav__btn {
+    display: none;
+}
+
+.nav--mobile {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+/* SECTION CARROSEL */
+
+.carrosel {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.conteudo {
+    padding: 1.5rem;
+}
+
+/* SECTION DESCRICOES */
+.descricoes {
+    margin-bottom: 1.5rem;
+}
+
+.descricoes__titulo {
+    color: var(--laranja);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.descricoes__endereco {
+    color: var(--preto);
+    font-size: 1.2rem;
+}
+
+.descricoes__valores {
+    color: var(--preto);
+}
+
+.descricoes__valores__nome {
+    margin: 0;
+}
+
+.descricoes__valores__preco strong {
+    font-size: 0.8rem;
+}
+
+.descricoes__btn {
+    background-color: var(--laranja);
+    padding: 1rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.descricoes__btn:hover {
+    scale: 0.98;
+    transition: 0.5s;
+}
+
+.descricoes__btn i {
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--laranja);
+    padding: 1.5rem;
+    text-align: center;
+    color: #FFF;
+}
+
+footer .nav__title{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer p{
+    margin: 0;
+}
+
+.rodape__direitos {
+    font-size: 1.2rem;
+}
+
+.rodape__desenvolvedor {
+    font-size: 0.8rem;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F1F1F1; 
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF6000; 
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--laranja); 
+}
+
+@media (max-width: 1024px){
+    .nav__btn {
+        display: flex;
+        margin-left: auto;
+        background-color: var(--laranja);
+        border: none;
+        border-radius: 5px;
+        width: 35px;
+        height: 35px;
+        box-sizing: border-box;
+        color: #FFF;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__lista {
+        display: none;
+    }
+
+    .nav--mobile {
+        position: absolute;
+        top: 98%;
+        width: 100%;
+        background-color: #fff;
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .3);
+        z-index: 1;
+    }
+
+    .nav__lista--mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .nav__item--mobile a{
+        color: var(--preto);
+        text-decoration: none;
+        font-size: 1.3rem;
+        border-bottom: 1px solid var(--laranja);
+    }
+}
+
+@media (min-width: 1024px){
+    .carrosel {
+        margin-top: 1.5rem;
+    }
+
+    .descricoes {
+        text-align: center;
+    }
+
+    .descricoes__btn {
+        margin: 1.5rem auto 0;
+    }
+
+    .descricoes__container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+
+}
