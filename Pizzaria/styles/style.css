@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Krub:wght@700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 25px;
+  background-color: #0C0A08;
+  border-bottom: 2px solid rgba(191, 173, 173, 0.1);
+  height: 10vh;
+  box-sizing: border-box;
+}
+header ul {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  padding: 1em 0.5em;
+  align-items: center;
+}
+header ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header ul a:hover {
+  color: #E59F41;
+  transition: 0.5s;
+}
+header ul .header__link--home {
+  color: #E59F41;
+}
+header ul .header__link--home:hover {
+  color: #FFFFFF;
+}
+header ul div {
+  display: flex;
+  margin-left: auto;
+  gap: 5px;
+  padding: 1em 0.5em;
+  align-items: center;
+}
+header ul div button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+header ul div button:hover {
+  scale: 0.9;
+  transition: 0.5s;
+}
+
+main {
+  background-image: url(../images/Banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding: 0 25px;
+  min-height: 90vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .pizzas_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .pizzas_section h2 {
+  color: #E59F41;
+  font-size: 70px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .pizzas_section h2 strong {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+main .pizzas_section .container {
+  display: flex;
+  position: relative;
+}
+main .pizzas_section .container__pedido {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #0C0A08;
+  padding: 0.3em 1em;
+  border: 3px solid #E59F41;
+  border-radius: 1000px 100px;
+}
+main .pizzas_section .container__pedido a {
+  color: #FFFFFF;
+  font-size: 30px;
+  text-decoration: none;
+}
+main .pizzas_section .container .pizza {
+  text-align: center;
+}
+main .pizzas_section .container .pizza__preco {
+  position: relative;
+}
+main .pizzas_section .container .pizza__preco__texto {
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  position: absolute;
+  color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .pizzas_section .container .pizza__preco__texto p:nth-child(2) {
+  font-size: 20px;
+  color: #E59F41;
+}
+main .social__section {
+  display: flex;
+  gap: 15px;
+}
+main .social__section a:hover {
+  scale: 0.9;
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */

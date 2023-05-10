@@ -1,0 +1,88 @@
+@import '../abstract/variaveis';
+main {
+    background-image: url(../images/Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 0 25px;
+    min-height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .pizzas_section {       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        h2 {
+            color: $dourado;
+            font-size: 70px;
+            font-weight: $medium;
+            text-transform: uppercase;
+    
+            strong {
+                font-weight: $bold;
+                color: $branco;
+            }
+        }
+    
+        .container {
+            display: flex;
+            position: relative;
+
+            &__pedido {
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                transform: translate(-50%);
+                background-color: $preto;
+                padding: 0.3em 1em;
+                border: 3px solid $dourado;
+                border-radius: 1000px 100px ;
+                
+                a {
+                    color: $branco;
+                    font-size: 30px;
+                    text-decoration: none;
+                }
+            }
+    
+            .pizza {
+                text-align: center;
+    
+                &__preco {
+                    position: relative;
+    
+                    &__texto {
+                        font-family: 'Krub', sans-serif;
+                        font-weight: $bold;
+                        font-size: 40px;
+                        position: absolute;
+                        color: $branco;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        
+                        p:nth-child(2){
+                            font-size: 20px;
+                            color: $dourado;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .social__section {
+        display: flex;
+        gap: 15px;
+
+        a:hover {
+            scale: 0.9;
+            transition: 0.5s;
+        }
+    }
+}
+

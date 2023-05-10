@@ -1,0 +1,58 @@
+@import '../abstract/variaveis';
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 25px;
+    background-color: $preto;
+    border-bottom: 2px solid rgba(191, 173, 173,0.1);
+    height: 10vh;
+    box-sizing: border-box;
+
+    ul {
+        display: flex;
+        width: 100%;
+        gap: 25px;
+        padding: 1em .5em;
+        align-items: center;
+
+        a {
+            color: $branco;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $dourado;
+            transition: 0.5s;
+        }
+
+        .header__link--home {
+            color: $dourado;
+        }
+
+        .header__link--home:hover {
+            color: $branco;
+        }
+
+        div {
+            display: flex;
+            margin-left: auto;
+            gap: 5px;
+            padding: 1em .5em;
+            align-items: center;
+
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    scale: 0.9;
+                    transition: 0.5s;
+                }
+            }
+            
+        }
+    }
+}
