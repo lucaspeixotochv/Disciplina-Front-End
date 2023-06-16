@@ -20,7 +20,9 @@ header {
   flex-direction: column;
   gap: 5rem;
   color: var(--white);
-  padding: 4rem 10rem;
+  padding: 4rem 0 2rem 0;
+  border-bottom: 1px solid var(--white);
+  margin: 0 10rem;
 }
 
 .header__title {
