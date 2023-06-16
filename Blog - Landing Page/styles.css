@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   max-width: 100vw;
   background: var(--linear);
+  position: relative;
 }
 
 header {
@@ -207,4 +208,16 @@ main {
   background: #723c8d;
   filter: blur(70px);
   z-index: -1;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1;
+  background-color: #075e54;
+  font-size: 2rem;
+  color: var(--white);
+  border-radius: 50%;
+  padding: 1rem;
 }
